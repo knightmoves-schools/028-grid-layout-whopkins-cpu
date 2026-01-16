@@ -4,7 +4,27 @@
     <title>Grid</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+        .grid-container {
+            display: grid; 
+            gap: 10px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "header header"
+                "leftNav main";
+        }
+
+        .first-item {
+            grid-area: header;
+        }
+
+        .second-item {
+            grid-area: leftNav;
+        }
+
+        .third-item {
+            grid-area: main;
+        }
     </style>
 </head>
 
