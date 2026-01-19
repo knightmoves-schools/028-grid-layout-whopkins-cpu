@@ -10,8 +10,8 @@
             grid-template-columns: 1fr 2fr;
             grid-template-rows: auto auto;
             grid-template-areas:
-                "header header"
-                "leftNav main";
+                "leftNav header header"
+                "leftNav main main";
         }
 
         .first-item {
@@ -30,9 +30,9 @@
 
 <body>
     <div class="grid-container">
-        <div class="first-item">first</div>
-        <div class="second-item">second</div>
-        <div class="third-item">third</div>
+        <div class="first-item">header</div>
+        <div class="second-item">leftNav</div>
+        <div class="third-item">main</div>
     </div>
 </body>
 
